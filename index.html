@@ -1,0 +1,438 @@
+<!-- html -->
+<!DOCTYPE html>
+<html>
+<!-- head -->
+<head>
+	<!-- meta -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- title -->
+	<title>HTML Practice</title>
+	<!-- style -->
+	<style>
+		table, th, td {
+		  border: 1px solid #000;
+		}
+		code, samp, kbd{
+		  font-family: Consolas,"courier new";
+		  color: blue;
+		  background-color: #f1f1f1;
+		  padding: 2px;
+		  font-size: 17px;
+		}
+		del {background-color: pink;}
+        ins {background-color: lightskyblue;}
+        details > summary {
+		  padding: 4px;
+		  width: 200px;
+		  background-color: #eeeeee;
+		  border: none;
+		  box-shadow: 1px 1px 2px #bbbbbb;
+		  cursor: pointer;
+		}
+		details > p {
+		  background-color: #eeeeee;
+		  padding: 4px;
+		  margin: 0;
+		  box-shadow: 1px 1px 2px #bbbbbb;
+		}
+		.info {
+		  border: 5px outset black;    
+		  text-align: center;
+        }
+        .spelling-error {
+		  text-decoration-line: underline;
+		  text-decoration-style: wavy;
+		  text-decoration-color: red;
+		}
+    </style>
+</head>
+<!-- body -->
+<body>
+<!-- main -->
+  <main>
+	<!-- header -->
+	<header>
+		<h1>HTML Practice</h1>
+	</header>
+
+	<!-- hyperlink -->
+	<h2>Hyperlink</h2>
+	<a href="https://www.facebook.com/">Visit Facebook</a>
+
+    <!-- abbr -->
+	<h2>The abbr element</h2>
+	<p>The <abbr title="Food and Agriculture Organization">FAO</abbr> was published in Italy.</p>
+
+    <!-- address and br -->
+	<h2>The address and br elements</h2>
+	<address>
+	Written by <a href="mailto:aminahtabassum66@gmail.com">Aminah Tabassum</a>.<br> 
+	Visit me at:<br>
+	Road: 5, House: 36, Block: G<br>
+	Banani, Dhaka<br>
+	Bangladesh
+	</address>
+
+    <!-- article -->
+	<h2>The article element</h2>
+	<article>
+	  <h3>HTML Tutorial</h3>
+	  <p>HTML-Hyper Text Markup Language. It is used to create a static web page.</p>
+	</article>
+
+    <!-- aside -->
+	<h2>The aside element</h2>
+	<p>I visited Dubai this summer. The city is beautiful. I had a great trip with my family!</p>
+	<aside>
+	  <h4>Dubai</h4>
+	  <p>Dubai is a city in United Arab Emirates.</p>
+	</aside>
+
+    <!-- bold -->
+	<h2>The b element</h2>
+    <p>This is normal text - <b>and this is bold text</b>.</p>
+
+    <!-- bdo -->
+    <h2>The bdo element</h2>
+    <p>I have a passion for dolls.</p>
+    <p><bdo dir="rtl">I have a passion for dolls.</bdo></p>
+
+    <!-- button -->
+    <h2>The button element</h2>
+    <button type="button" onclick="alert('Are you sure?')">Delete</button>
+    <button type="button" autofocus onclick="alert('Are you sure?')">Delete</button>
+    <button type="button" disabled>Select</button>
+
+    <!-- canvas -->
+    <h2>Canvas</h2>
+    <canvas id="canvas" width="400" height="200" style="border:2px solid red"></canvas>
+
+    <!-- caption, colgroup, col, table, thead, tbody, tfoot, tr, th and td -->
+    <h2>The caption, colgroup, col, table, thead, tbody, tfoot, tr, th and td elements</h2>
+	<table>
+	  <caption>Monthly products and prices</caption>
+	  <colgroup>
+	    <col span="2" style="background-color:pink">
+	    <col style="background-color:lightskyblue;">
+	  </colgroup>
+	  <thead>
+	  	<tr>
+		   <th>Month</th>
+		   <th>Prices</th>
+		   <th>Products</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	  	<tr>
+		   <td>January</td>
+		   <td>$100</td>
+		   <td>10</td>
+		</tr>
+		<tr>
+		   <td>February</td>
+		   <td>$150</td>
+		   <td>20</td>
+		</tr>
+		<tr>
+		   <td>March</td>
+		   <td>$200</td>
+		   <td>30</td>
+		</tr>
+		<tr>
+		   <td>April</td>
+		   <td>$250</td>
+		   <td>40</td>
+		</tr>
+	  </tbody>
+	  <tfoot>
+	    <tr>
+		   <td>Sum</td>
+		   <td>$700</td>
+		   <td>100</td>  
+	    </tr>
+      </tfoot>
+	</table>
+
+    <!-- code, samp and kbd -->
+    <h2>The code, samp and kbd elements</h2>
+    <p>The HTML <code>button</code> tag defines a clickable button.</p>
+    <p>Message from the website:</p>
+    <samp>File not found</samp>
+    <p>Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to Save text.</p>
+
+    <!-- data, ul and li -->
+    <h2>The data, ul and li elements</h2>
+	<p>The following example displays product names with product numbers:</p>
+	<ul>
+	  <li><data value="80053">Tomato</data></li>
+	  <li><data value="80054">Ginger</data></li>
+	  <li><data value="80055">Onion</data></li>
+	</ul>
+
+    <!-- datalist -->
+	<h2>The datalist element</h2>
+	<form method="get">
+	  <label for="browser">Choose your favourite colour from the list:</label>
+	  <input list="colours" name="colour" id="colour">
+	  <datalist id="colours">
+	    <option value="Red">
+	    <option value="Yellow">
+	    <option value="Blue">
+	    <option value="Green">
+	    <option value="Purple">
+	  </datalist>
+	  <input type="submit">
+	</form>
+
+    <!-- dl, dd and dt -->
+	<h2>The dl, dd, and dt elements</h2>
+	<dl>
+	  <dt>Tea</dt>
+	  <dd>Brown hot drink</dd>
+	  <dt>Milk</dt>
+	  <dd>White hot drink</dd>
+	  <dt>Pepsi</dt>
+	  <dd>Black cold Drink</dd>
+	</dl>
+
+    <!-- del and ins -->
+	<h2>The del and ins elements</h2>
+    <p>My favorite fruit is <del>banana</del> <ins>mango</ins>!</p>
+    <p><del cite="del_demo_cite.htm">This picture has been removed.</del></p>
+    <p><del datetime="2023-07-03T22:55:03Z">This picture has been removed.</del></p>
+    <p><ins cite="why_inserted.htm">This picture has been inserted.</ins></p>
+    <p><ins datetime="2023-07-03T22:55:03Z">This picture has been inserted.</ins></p>
+
+    <!-- details and summary -->
+    <h2>The details and summary elements</h2>
+	<details>
+	  <summary>Dhaka</summary>
+	  <p>Dhaka is a polluted city.</p>
+	</details>
+
+    <!-- dfn -->
+	<h2>The dfn element</h2>
+    <p><dfn>HTML</dfn> is the standard markup language for creating web pages.</p>
+
+    <!-- dialog -->
+    <h2>The dialog element</h2>
+    <dialog open>This is an open dialog window</dialog>
+
+    <!-- em -->
+    <h2>The em element</h2>
+    <p>We <em>need</em> to hurry up!</p>
+    <p>It is not <em>possible</em> to live like this.</p>
+
+    <!-- div -->
+    <h2>The div element</h2>
+	<div class="info">
+	  <h3>Aminah Tabassum</h3>
+	  <p>My name is Aminah. I'm 26 years old. I am a junior web developer. I live in Banani.</p>
+	</div>
+
+    <!-- form, fieldset, legend, label, input and textarea -->
+	<h2>The form, fieldset, legend, label, input and textarea elements</h2>
+	<form>
+	 <fieldset name="dform">
+	  <legend>Details:</legend>
+	  <label for="fname">First name:</label>
+	  <input type="text" id="fname" name="fname"><br><br>
+	  <label for="lname">Last name:</label>
+	  <input type="text" id="lname" name="lname"><br><br>
+	  <label for="email">Email:</label>
+	  <input type="email" id="email" name="email"><br><br>
+	  <label for="birthday">Birthday:</label>
+	  <input type="date" id="birthday" name="birthday"><br><br>
+  	  <p><label for="message">Message:</label></p>
+      <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+	  <input type="submit" value="Submit">
+	  <button type="button" onclick="form.dform.style.backgroundColor='lightskyblue'">Change background color of fieldset</button>
+	 </fieldset>
+	</form>
+	<form>
+	 <fieldset disabled>
+	  <legend>Details:</legend>
+	  <label for="fname">First name:</label>
+	  <input type="text" id="fname" name="fname"><br><br>
+	  <label for="lname">Last name:</label>
+	  <input type="text" id="lname" name="lname"><br><br>
+	  <label for="email">Email:</label>
+	  <input type="email" id="email" name="email"><br><br>
+	  <label for="birthday">Birthday:</label>
+	  <input type="date" id="birthday" name="birthday"><br><br>
+	  <input type="submit" value="Submit">
+	 </fieldset>
+	</form>
+
+    <!-- footer -->
+	<h2>The footer element</h2>
+	<footer>
+	  <p>Author: Aminah Tabassum<br>
+	  <a href="mailto:aminahtabassum66@gmail.com">aminahtabassum66@gmail.com</a></p>
+	</footer>
+
+	<!-- heading -->
+	<h2>The heading elements</h2>
+	<h1>I love baking</h1>
+	<h2>I love baking</h2>
+	<h3>I love baking</h3>
+	<h4>I love baking</h4>
+	<h5>I love baking</h5>
+	<h6>I love baking</h6>
+
+    <!-- hr -->
+    <h2>The hr element</h2>
+    <hr>
+	<p>CSS is a language that describes how HTML elements are to be displayed on screen, paper, or in other media. CSS saves a lot of work, because it can control the layout of multiple web pages all at once.</p>
+	<hr>
+     
+    <!-- i -->
+	<h2>The i element</h2>
+    <p><i>Confucious</i> was the most famous teacher in China.</p>
+
+    <!-- mark -->
+    <h2>The mark element</h2>
+    <p>Please bring the <mark>note-book</mark>.</p>
+
+    <!-- meter -->
+    <h2>The meter element</h2>
+	<label for="disk_a">Disk usage A:</label>
+	<meter id="disk_a" value="3" min="0" max="10">3 out of 10</meter><br>
+	<label for="disk_b">Disk usage B:</label>
+	<meter id="disk_b" value="0.7">70%</meter>
+
+    <h2>The meter high, low, max, min, and value attributes</h2>
+	<p><label for="sam">Sam's score:</label>
+	<meter id="sam" min="0" low="40" high="90" max="100" value="94"></meter></p>
+	<p><label for="mary">Mary's score:</label>
+	<meter id="mary" min="0" low="40" high="90" max="100" value="30"></meter></p>
+	<p><label for="carly">Carly's score:</label>
+	<meter id="carly" min="0" low="40" high="90" max="100" value="68"></meter></p>
+
+    <!-- nav -->
+	<h2>The nav element</h2>
+	<nav>
+		<a href="/python/">Python</a> |
+		<a href="/java/">Java</a> |
+		<a href="/js/">JavaScript</a> |
+		<a href="/c++/">C++</a>
+	</nav>
+
+    <!-- script and noscript -->
+	<h2>The script and noscript elements</h2>
+	<p id="scrpt"></p>
+	<script>
+	    document.getElementById("scrpt").innerHTML = "This is JavaScript!";
+	</script>
+	<noscript>Your browser does not support JavaScript!</noscript>
+
+	<!-- oi -->
+	<h2>The oi element</h2>
+	<ol>
+	  <li>Rose</li>
+	  <li>Hibiscus</li>
+	  <li>Tulip</li>
+	</ol>
+	<ol start="100">
+	  <li>Rose</li>
+	  <li>Hibiscus</li>
+	  <li>Tulip</li>
+	</ol>
+
+    <!-- optgroup, select and option -->
+	<h2>The optgroup, select and option elements</h2>
+	<form>
+	  <label for="fruits">Choose a fruit:</label>
+	  <select name="fruits" id="fruits">
+	    <optgroup label="Fruits">
+	      <option value="mango">Mango</option>
+	      <option value="apple">Apple</option>
+	    </optgroup>
+	    <optgroup label="Vegetables">
+	      <option value="tomato">Tomato</option>
+	      <option value="carrot">Carrot</option>
+	    </optgroup>
+	  </select>
+	  <br><br>
+	  <input type="submit" value="Submit">
+	</form>
+
+    <!-- output and strong-->
+	<h2>The output and strong elements</h2>
+	<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+	<input type="number" id="a" value="75">
+	+<input type="range" id="b" value="25">
+	=<output name="x" for="a b"></output>
+	</form>
+	<!-- strong -->
+	<p><strong>Note:</strong> The output element is not available in all edges.</p>
+
+    <!-- pre -->
+	<h2>The pre element</h2>
+	<pre>
+	Cox's Bazar is a city, fishing port,
+	tourism center, and district headquarters
+	in southeastern Bangladesh. It is famous
+	mostly for its long natural sandy beach,
+	and it is infamous for the largest
+	refugee camp in the world.
+	</pre>
+
+    <!-- progress -->
+	<h2>The progress element</h2>
+	<label for="file">Downloading progress:</label>
+	<progress id="file" value="52" max="100"> 52% </progress>
+
+    <!-- q -->
+	<h2>The q element</h2>
+	<p>My goal is to: 
+	<q>Build a software company.</q>
+	We hope we succeed.</p>
+
+    <!-- section -->
+    <h2>The section element</h2>
+	<section>
+	  <h3>Burj Khalifa</h3>
+	  <p>The Burj Khalifa is a skyscraper in Dubai, United Arab Emirates. It is the world's tallest building with a total height of 829.8 m.</p>
+	</section>
+	<section>
+	  <h3>Burj Al Arab</h3>
+	  <p>Burj Al Arab rises out of its own man-made island 280 meters from the Jumeirah coast. Visible from almost everywhere in the city, it is the icon of Dubai.</p>
+	</section>
+
+    <!-- small -->
+	<h2>The small element</h2>
+	<p>I am 26 years old.</p>
+	<p><small>I am 26 years old.</small></p>
+
+    <!-- span -->
+	<h2>The span element</h2>
+    <p>My mother has <span style="color:red">red</span> eyes.</p>
+
+    <!-- sub and sup -->
+    <h2>The sub and sup elements</h2>
+	<p>Formula of water - H<sub>2</sub>O and formula of ethanol - C<sub>2</sub>H<sub>5</sub>OH</p>
+	<p>9<sup>th</sup> of September.</p>
+
+    <!-- svg -->
+	<h2>The svg element</h2>
+	<svg width="100" height="100">
+	  <circle cx="50" cy="50" r="40" stroke="black" stroke-width="4" fill="lightpink" />
+	</svg>
+
+    <!-- time -->
+	<h2>The time element</h2>
+	<p>Open from <time>10:00</time> to <time>20:00</time> every week.</p>
+	<p>I have an appointment on <time datetime="2023-07-14 20:00">14<sup>th</sup> July</time>.</p>
+
+    <!-- u -->
+	<h2>The u element</h2>
+    <p>This is an <u class="spelling-error">incorrect</u> text.</p>
+
+    <!-- var -->
+    <h2>The var element</h2>
+    <p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>
+  </main>
+</body>
+</html>
